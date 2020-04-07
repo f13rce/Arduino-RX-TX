@@ -30,3 +30,19 @@
 *.exe
 *.out
 *.app
+
+# VS
+*.db
+*.opendb
+*.ipch
+*.db-shm
+*.db-wal
+*.suo
+*.user
+*.xml
+*.elf
+*.eep
+*.hex
+*.buildinfo
+
+/Debug
