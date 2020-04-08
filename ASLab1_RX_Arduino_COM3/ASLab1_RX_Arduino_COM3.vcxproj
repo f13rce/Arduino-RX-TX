@@ -86,7 +86,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(ProjectDir)..\ASLab1_RX_Arduino_COM3;E:\API\Arduino\hardware\arduino\avr\cores\arduino;E:\API\Arduino\hardware\arduino\avr\variants\eightanaloginputs;$(ProjectDir)..\..\Arduino;E:\API\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;E:\API\Arduino\hardware\tools\avr\avr\include;E:\API\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;E:\API\Arduino\hardware\tools\avr\avr\include-fixed;E:\API\Arduino\hardware\tools\avr\avr\include\avr;E:\API\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;E:\API\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;E:\API\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ASLab1_RX_Arduino_COM3;$(ProjectDir)..\..\..\Software\Arduino\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\..\Software\Arduino\hardware\arduino\avr\variants\eightanaloginputs;$(ProjectDir)..\..\Arduino-RX-TX;$(ProjectDir)..\..\..\Software\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;$(ProjectDir)..\..\..\Software\Arduino\hardware\tools\avr\avr\include;$(ProjectDir)..\..\..\Software\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;$(ProjectDir)..\..\..\Software\Arduino\hardware\tools\avr\avr\include-fixed;$(ProjectDir)..\..\..\Software\Arduino\hardware\tools\avr\avr\include\avr;$(ProjectDir)..\..\..\Software\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\Software\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\Software\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)__vm\.ASLab1_RX_Arduino_COM3.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__AVR_atmega328p__;__AVR_ATmega328P__;__AVR_ATmega328p__;_VMDEBUG=1;F_CPU=16000000L;ARDUINO=108012;ARDUINO_AVR_NANO;ARDUINO_ARCH_AVR;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -119,7 +119,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties config.Debug.customdebug_nano_atmega328old_debugger_type="universal" arduino.upload.port="COM3" />
+      <UserProperties config.Debug.customdebug_nano_atmega328old_debugger_type="universal" config.Debug.customdebug_yun_debugger_type="universal" arduino.upload.port="COM5" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
