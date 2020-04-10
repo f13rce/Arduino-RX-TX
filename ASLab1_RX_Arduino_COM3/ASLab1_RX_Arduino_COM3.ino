@@ -38,7 +38,13 @@ void PrintTimeRunning()
 		// Minutes
 		Serial.print("Time running:\t");
 		Serial.print(delta / 60000);
-		Serial.print(" minutes.\n");
+
+		auto minutes = delta / 60000;
+		auto seconds = (delta / 60000) / 1000;
+
+		Serial.print(" minutes and ");
+		Serial.print(seconds);
+		Serial.print("seconds.\n");
 	}
 	else
 	{

@@ -60,6 +60,7 @@ void loop()
 			Serial.print(" (");
 			Serial.print(100.f / totalBytesToSend * bytesTransmitted);
 			Serial.print("\%)\n");
+			Serial.print("\n");
 			digitalWrite(LEDPIN, 0);
 
 			// Wait for next burst
