@@ -84,7 +84,7 @@ void PrintCSVHeader()
 
 void PrintCSVStatistic(const Statistic& acStatistic)
 {
-	Serial.print(acStatistic.time);
+	Serial.print((int32_t)acStatistic.time);
 	Serial.print(", ");
 
 	Serial.print(acStatistic.totalMessages);
@@ -244,7 +244,7 @@ void loop()
 
 		// Stats!
 		Statistic stat;
-		stat.time = float(millis()) / 1000.f;
+		stat.time = float(millis() - start) / 1000.f;
 
 		//PrintTimeRunning();
 
@@ -276,7 +276,11 @@ void loop()
 		stat.corruptedMessages = corruptedMessages;
 
 		//Serial.print("\nMissing:\t");
-		uint32_t missed = totalMessages - messagesReceived;
+		int32_t missed = totalMessages - messagesReceived;
+		if (missed < 0)
+		{
+			missed = 0;
+		}
 		/*Serial.print(missed);
 		Serial.print(" (");
 		Serial.print(100.f / totalMessages * missed);
