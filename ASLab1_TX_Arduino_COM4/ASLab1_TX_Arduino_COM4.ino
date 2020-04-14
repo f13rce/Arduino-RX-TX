@@ -10,6 +10,7 @@ uint32_t messagesTransmitted = 0;
 uint32_t bytesTransmitted = 0;
 const uint32_t bytesPerBurst = sendBufferSize;
 
+// Up for change, but choosing uint32_MAX to send "indefinitely"
 //const uint32_t totalBursts = 20;
 const uint32_t totalBursts = 0xFFFFFFFF;
 
@@ -21,7 +22,7 @@ void setup()
 	pinMode(LEDPIN, OUTPUT);
 	vw_set_ptt_inverted(true);
 	vw_set_tx_pin(TXPIN);
-	vw_setup(4000);
+	vw_setup(bitRate);
 }
 
 void loop()

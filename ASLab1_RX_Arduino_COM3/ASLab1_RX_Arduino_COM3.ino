@@ -49,7 +49,7 @@ void setup()
 {
 	vw_set_ptt_inverted(true); // Required for DR3100
 	vw_set_rx_pin(RXPIN);
-	vw_setup(4000);  // Bits per sec
+	vw_setup(bitRate);  // Bits per sec
 	pinMode(LEDPIN, OUTPUT);
 
 	vw_rx_start(); // Start the receiver PLL running
